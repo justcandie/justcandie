@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Page</title>
+    <link rel="stylesheet" href="./../default.css">
+</head>
+<body>
+    <ul style="list-style-type: none;">
+        <li>
+            <h2 class="toggle-button" onclick="toggleView(this)">Reading</h2>
+            <div class="toggle-content">
+                https://www.themicropedia.org/ - Microagressions 
+                https://neal.fun/space-elevator/ - Space Elevator
+
+
+            </div>
+        </li>
+
+        <li>
+            <h2 class="toggle-button" onclick="toggleView(this)">Shenanigans</h2>
+            <div class="toggle-content">
+                https://my.corgiorgy.com/ - Gif Party Generator
+                https://goblin-heart.net/sadgrl/magnet-poetry/# - Magnet Poetry
+                https://forums.dragcave.net/topic/120519-the-newbie-gifting-project-thread/ - Dragon Cave
+            </div>
+        </li>
+        
+        <li>
+            <h2 class="toggle-button" onclick="toggleView(this)">Text Flair</h2>
+            <div class="toggle-content">
+                https://www.upsidedowntext.com/ - Upside Down Text
+                https://kaomoji.ru/en/ - Kaomoji
+            </div>
+        </li>
+
+        <li>
+            <h2 class="toggle-button" onclick="toggleView(this)">Games</h2>
+            <div class="toggle-content">
+                https://www.reddit.com/r/SteamRip/wiki/index/games/ - Steam Game Downloads
+                https://www.cubefield.org.uk/ - cubefield
+                https://t-rexwave.itch.io/hand-drawn-maze-generator - Squiggly Maze Generator
+                https://jhu.itch.io/git-golf - Git Golf
+                https://www.askfamouspeople.com/ - Ask Famous People
+                https://tio.itch.io/flatmates - Flatmates
+                https://georgioklironomos.itch.io/cats-cradle - Cats Cradle
+                https://ispy.heihei.resn.co/ - iSpy
+
+            </div>
+        </li>
+
+        <li>
+            <h2 class="toggle-button" onclick="toggleView(this)">Music</h2>
+            <div class="toggle-content">
+                https://defonic.com/ - Ambience Sounds
+            </div>
+        </li>
+
+        <li>
+            <h2 class="toggle-button" onclick="toggleView(this)">List 3</h2>
+            <div class="toggle-content">
+                <p>Details for List 3</p>
+                https://minecraft.novaskin.me/profile/115522635368286881500 - Minecraft Sugar Texture
+            </div>
+        </li>
+        <!-- -->
+    </ul>
+
+</body>
+
+<script>
+    function toggleView(button) {
+        // Find the toggle-content div within the clicked li
+        const content = button.nextElementSibling;
+
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</html>

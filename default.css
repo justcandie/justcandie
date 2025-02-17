@@ -1,0 +1,21 @@
+body {
+    background-color: #343231; 
+    color: #F2F0EF; 
+    font-family: Arial, sans-serif; 
+    padding: 20px;
+}
+
+.toggle-content {
+    display: none;
+    padding: 0px;
+}
+
+.toggle-button {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.toggle-content a {
+    color: #b54c8e; /* Pink color for links inside content */
+}
